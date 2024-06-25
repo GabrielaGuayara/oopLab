@@ -1,5 +1,6 @@
 class Character {
 
+    //Part 4: Created static variables
     static MAX_HEALTH = 100;
 
     constructor (name) {
@@ -31,6 +32,7 @@ console.log(robin)
 //Part three: class Adventurer extends Character {
     class Adventurer extends Character {
     
+        //Create a static array with the character's role
         static ROLES = ["Fighter", "Healer", "Wizard"]
     
         constructor (name, role) {
