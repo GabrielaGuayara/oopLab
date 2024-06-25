@@ -1,7 +1,7 @@
 class Character {
 
     static MAX_HEALTH = 100;
-    
+
     constructor (name) {
       this.name = name;
       this.health = 100;
@@ -30,10 +30,13 @@ console.log(robin)
 
 //Part three: class Adventurer extends Character {
     class Adventurer extends Character {
+    
+        static ROLES = ["Fighter", "Healer", "Wizard"]
+    
         constructor (name, role) {
           super(name);
           // Adventurers have specialized roles.
-          this.role = role;
+          this.role = ROLES;
           // Every adventurer starts with a bed and 50 gold coins.
           this.inventory.push("bedroll", "50 gold coins");
         }
